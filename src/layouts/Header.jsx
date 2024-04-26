@@ -7,7 +7,6 @@ function Header() {
     <div>
       <NavBarTop />
       <NavBarBottom />
-      <h1>Header</h1>
     </div>
   );
 }

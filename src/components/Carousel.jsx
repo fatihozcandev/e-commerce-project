@@ -1,36 +1,65 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+const images = [
+  {
+    id: 1,
+    url: "https://cataas.com/cat",
+  },
+  {
+    id: 2,
+    url: "https://cataas.com/cat",
+  },
+  {
+    id: 3,
+    url: "https://cataas.com/cat",
+  },
+  {
+    id: 4,
+    url: "https://cataas.com/cat",
+  },
+  {
+    id: 5,
+    url: "https://cataas.com/cat",
+  },
+  {
+    id: 6,
+    url: "https://cataas.com/cat",
+  },
+  {
+    id: 7,
+    url: "https://cataas.com/cat",
+  },
+];
 
 const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 50,
-    slidesToShow: 1,
-    slidesToScroll: 2,
-    autoplay: true,
-    adaptiveHeight: true,
-    focusOnSelect: true,
-  };
-
-  const images = [
-    "https://picsum.photos/1400/800?random=1",
-    "https://picsum.photos/1400/800?random=2",
-    "https://picsum.photos/1400/800?random=3",
-  ];
-
   return (
-    <div className="mx-auto">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`slide-${index}`} />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      autoplay={{
+        delay: 1000,
+      }}
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {images.map((image, index) => (
+        <SwiperSlide key={index} className="flex justify-center items-center">
+          <img src={image.url} alt={`image-${index}`} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 
