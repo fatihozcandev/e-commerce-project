@@ -111,3 +111,68 @@ export const productCardData = [
     salePrice: "6.48",
   },
 ];
+
+export const topSliderData = [
+  {
+    id: 1,
+    url: "https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fMd0TpvHwm-5FftP7jkJzEmzf59eKBHetVCGhp8PlrCI8twT4fFEpOUYF8fCSJgdrjB8tZvGeKXkVLehXbY9I9XihZL3KxyO3QCuaFVpd7022miy1Ifrhpj275kU4Uxc20twESSse7taKv-EaqvkCL-hFhS-IajdT7FOBfdgMm0orQHulP9NEJ-Pi4LbNj5YqZnXggEkxkFYDfND8iac-JSY~J5-ly6wlu6wf5U3fqt4DHveHDkt3jyB-soG9WSjCvhJRgU4SOx9SCJzptqf8fFuNjdPc2~tRbTmuMjROGT5d6-W88M4U4uIuEY-uNNi78M1YuSbuIz3XFApe3XTIw__",
+    season: "SUMMER 2020",
+    category: "NEW COLLECTION",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "",
+  },
+  {
+    id: 2,
+    url: "https://www.usmagazine.com/wp-content/uploads/2022/09/City-Girl-Fashion-Stock-Photo.jpg?crop=0px%2C49px%2C2000px%2C1131px&resize=1600%2C900&quality=86&strip=allt",
+    season: "SUMMER 2020",
+    category: "NEW COLLECTION",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "",
+  },
+  {
+    id: 3,
+    url: "https://static.vecteezy.com/system/resources/previews/030/397/406/large_2x/a-beautiful-model-woman-walking-with-shopping-bags-buying-clothes-in-stores-on-a-city-street-in-france-fashionable-lady-with-high-heels-generative-ai-photo.jpeg",
+    season: "SUMMER 2020",
+    category: "NEW COLLECTION",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "",
+  },
+];
+export const bottomSliderData = [
+  {
+    id: 1,
+    url: "https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg",
+    season: "SUMMER 2020",
+    category: "Vita Classic Product",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "$16.48",
+  },
+  {
+    id: 2,
+    url: "https://perkclothing.com/cdn/shop/articles/ls_outside_1016.jpg?v=1655826119&width=1500",
+    season: "SUMMER 2020",
+    category: "Vita Classic Product",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "$16.48",
+  },
+  {
+    id: 3,
+    url: "https://www.ernest.ca/cdn/shop/articles/Reussir_le_style_casual_chic_homme.jpg?v=1698246829&width=2048",
+    season: "SUMMER 2020",
+    category: "Vita Classic Product",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "$16.48",
+  },
+];
