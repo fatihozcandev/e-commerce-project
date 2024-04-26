@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCard from "./reusableComponents/ProductCard";
-import { posts } from "../data/data";
+import FeaturedCard from "../reusableComponents/FeaturedCard";
+import { posts } from "../../data/data";
 
 const FeaturedPosts = () => {
   return (
@@ -17,7 +17,7 @@ const FeaturedPosts = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-5">
         {posts.map((post, index) => (
-          <ProductCard key={index} {...post} />
+          <FeaturedCard key={index} {...post} />
         ))}
       </div>
     </div>

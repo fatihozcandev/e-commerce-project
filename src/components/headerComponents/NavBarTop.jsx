@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBarTop() {
   return (
-    <div className="bg-primary-color flex flex-row justify-between h-14   ">
+    <div className="bg-primary-color flex flex-row justify-between h-14 p-3   ">
       <div className="flex flex-row items-center ml-2.5">
         <div className="Mail-icon">
           <a href="mailto:michelle.rivera@example.com">
