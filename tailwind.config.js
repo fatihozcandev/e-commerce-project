@@ -34,6 +34,7 @@ export default {
       h4: ["20px", "30px"],
       h5: ["16px", "24px"],
       h6: ["14px", "24px"],
+      small: ["12px", "16px"],
       btnText: ["14px", "28px"],
       mobileMenu: ["30px", "45px"],
       paragraph: ["14px", "20px"],
