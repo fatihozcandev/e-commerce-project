@@ -9,10 +9,12 @@ function NavBarBottom() {
         <div className="relative">
           <div className="absolute top-full left-0 w-32 bg-gray-800 py-2 rounded-md shadow-lg hidden"></div>
         </div>
-        <a href="#" className="text-link text-h6 hover:underline mr-4">
+        <a href="/" className="text-link text-h6 hover:underline mr-4">
           Home
         </a>
-        <button className="text-link text-h6 hover:underline mr-4">Shop</button>
+        <a href="/shop" className="text-link text-h6 hover:underline mr-4">
+          Shop
+        </a>
         <a href="#" className="text-link text-h6 hover:underline mr-4">
           About
         </a>
