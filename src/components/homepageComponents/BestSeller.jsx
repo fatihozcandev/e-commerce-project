@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard1 from "../reusableComponents/ProductCard1";
 import { productCardData } from "../../data/data";
+import axios from "axios";
 
 const BestSeller = () => {
   return (

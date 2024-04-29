@@ -16,17 +16,17 @@ const Footer = () => {
           <div className="icons">
             <SocialIcon
               className="mr-5"
-              url="www.facebook.com"
+              url="http://www.facebook.com"
               style={{ width: "2rem", height: "2rem" }}
             />
             <SocialIcon
               className="mr-5"
-              url="www.instagram.com"
+              url="http://www.instagram.com"
               style={{ width: "2rem", height: "2rem" }}
             />
             <SocialIcon
               className="mr-5"
-              url="www.x.com"
+              url="http://www.x.com"
               style={{ width: "2rem", height: "2rem" }}
             />
           </div>
@@ -35,12 +35,20 @@ const Footer = () => {
       <div className="container lg:max-w-[1060px] sm:h-72  mx-auto flex items-center sm:flex-row flex-col">
         {footerLinks.map((link, idx) => (
           <div key={idx} className="flex flex-col sm:basis-1/4">
-            <p className="font-bold text-h5 mb-4">{link.title}</p>
+            <h2 className="font-bold text-h5 mb-4">{link.title}</h2>
             <ul>
-              <li className="mb-2 text-list">{link.link1}</li>
-              <li className="mb-2 text-list">{link.link2}</li>
-              <li className="mb-2 text-list">{link.link3}</li>
-              <li className="mb-2 text-list">{link.link4}</li>
+              <a href="#" className="mb-2 text-list hover:underline ">
+                <p>{link.link1}</p>
+              </a>
+              <a href="#" className="mb-2 text-list hover:underline ">
+                <p>{link.link2}</p>
+              </a>
+              <a href="#" className="mb-2 text-list hover:underline ">
+                <p>{link.link3}</p>
+              </a>
+              <a href="#" className="mb-2 text-list hover:underline ">
+                <p>{link.link4}</p>
+              </a>
             </ul>
           </div>
         ))}

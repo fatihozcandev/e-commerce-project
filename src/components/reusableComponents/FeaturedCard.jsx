@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const FeaturedCard = ({
   imageUrl,
@@ -49,8 +50,14 @@ const FeaturedCard = ({
           </div>
         </div>
         <div className="flex flex-row pl-6 content-center">
-          <p className="mr-3 font-bold">Learn More </p>
-          <i className="fa-solid fa-chevron-right"></i>
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            className="mr-3 font-bold"
+          >
+            Learn More{" "}
+          </a>
+          <i className="fa-solid fa-chevron-right leading-normal"></i>
         </div>
       </div>
     </div>

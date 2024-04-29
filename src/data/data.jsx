@@ -42,7 +42,6 @@ export const posts = [
     ],
   },
 ];
-
 export const productCardData = [
   {
     imageUrl:
@@ -111,7 +110,6 @@ export const productCardData = [
     salePrice: "6.48",
   },
 ];
-
 export const topSliderData = [
   {
     id: 1,
@@ -133,9 +131,20 @@ export const topSliderData = [
     linkText: "SHOP NOW",
     price: "",
   },
+
   {
     id: 3,
-    url: "https://static.vecteezy.com/system/resources/previews/030/397/406/large_2x/a-beautiful-model-woman-walking-with-shopping-bags-buying-clothes-in-stores-on-a-city-street-in-france-fashionable-lady-with-high-heels-generative-ai-photo.jpeg",
+    url: "https://foto.sondakika.com/haber/2021/06/26/iste-kanserle-mucadele-eden-canan-erguder-in-son-14227724_1514_amp.jpg",
+    season: "SUMMER 2020",
+    category: "NEW COLLECTION",
+    description:
+      "We know how large objects will act,but things on a small scale.",
+    linkText: "SHOP NOW",
+    price: "",
+  },
+  {
+    id: 4,
+    url: "https://icdn.ensonhaber.com/crop/1200x675/resimler/diger/kok/2024/02/29/65e00892d83bf145.jpg",
     season: "SUMMER 2020",
     category: "NEW COLLECTION",
     description:
@@ -176,7 +185,6 @@ export const bottomSliderData = [
     price: "$16.48",
   },
 ];
-
 export const footerLinks = [
   {
     title: "Company Info",

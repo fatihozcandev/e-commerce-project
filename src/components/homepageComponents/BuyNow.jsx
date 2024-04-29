@@ -29,13 +29,13 @@ function BuyMe() {
             <div className="gap-2.5">
               <a
                 href="#"
-                className=" bg-success-color hover:bg-success-color text-white font-montserrat  rounded mr-2 w-[151px] h-[52px] px-10 py-5 rounded-l-md "
+                className=" bg-primary-color hover:bg-success-color  text-white font-montserrat  rounded mr-2 w-[151px] h-[52px] px-10 py-5 rounded-l-md "
               >
                 BUY NOW
               </a>
               <a
                 href="#"
-                className=" bg-white-500 hover:bg-white text-success-color font-montserrat  rounded mr-2 w-[151px] h-[52px] px-10 py-5 rounded-l-md "
+                className=" bg-white-500 hover:bg-light-gray-1 text-success-color font-montserrat outline outline-1   rounded mr-2 w-[151px] h-[52px] px-10 py-5 rounded-l-md "
               >
                 READ ME
               </a>
