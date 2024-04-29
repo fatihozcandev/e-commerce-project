@@ -4,7 +4,7 @@ import { productCardData } from "../../data/data";
 
 const BestSeller = () => {
   return (
-    <div className="    container mx-auto px-4 py-8 w-screen-2xl ">
+    <section className="    container mx-auto px-4 py-8 w-screen-2xl ">
       <div className="text-center  my-20">
         <h2 className="text-h4 text-second-text-color">Featured Products</h2>
         <p className="text-h3 text-text-color font-bold">BESTSELLER PRODUCTS</p>
@@ -25,7 +25,7 @@ const BestSeller = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -176,3 +176,34 @@ export const bottomSliderData = [
     price: "$16.48",
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Company Info",
+    link1: "About Us",
+    link2: "Carrier",
+    link3: "We are hiring",
+    link4: "Blog",
+  },
+  {
+    title: "Legal",
+    link1: "About Us",
+    link2: "Carrier",
+    link3: "We are hiring",
+    link4: "Blog",
+  },
+  {
+    title: "Features",
+    link1: "Business Marketing",
+    link2: "User Analytic",
+    link3: "Live Chat",
+    link4: "Unlimited Support",
+  },
+  {
+    title: "Resources",
+    link1: "IOS & Android",
+    link2: "Watch a Demo",
+    link3: "Customers",
+    link4: "API",
+  },
+];

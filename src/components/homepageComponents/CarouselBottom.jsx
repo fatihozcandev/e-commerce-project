@@ -12,7 +12,7 @@ import "swiper/css/autoplay";
 
 const CarouselBottom = () => {
   return (
-    <div>
+    <section>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         spaceBetween={50}
@@ -51,7 +51,7 @@ const CarouselBottom = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

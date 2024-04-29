@@ -4,7 +4,7 @@ import { posts } from "../../data/data";
 
 const FeaturedPosts = () => {
   return (
-    <div className="bg-gray-100 p-10">
+    <section className=" p-10">
       <div className="text-center">
         <h6 className="text-h6 text-primary-text-color">Practice Advice</h6>
         <h2 className="text-h2 font-bold mb-4 text-text-color">
@@ -20,7 +20,7 @@ const FeaturedPosts = () => {
           <FeaturedCard key={index} {...post} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

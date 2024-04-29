@@ -2,7 +2,7 @@ import React from "react";
 
 function BuyMe() {
   return (
-    <div className="container-fluid">
+    <section className="container-fluid">
       <div className="flex flex-wrap items-center">
         <div className="w-full md:w-1/2 px-4">
           <img
@@ -43,7 +43,7 @@ function BuyMe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -12,7 +12,7 @@ import "swiper/css/autoplay";
 
 const CarouselTop = () => {
   return (
-    <div>
+    <section>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         spaceBetween={50}
@@ -43,7 +43,7 @@ const CarouselTop = () => {
               </p>
               <div>
                 <p>{data.price}</p>
-                <Link rel="stylesheet" href="">
+                <Link rel="stylesheet" to="#">
                   <button type="button">{data.linkText}</button>
                 </Link>
               </div>
@@ -51,7 +51,7 @@ const CarouselTop = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

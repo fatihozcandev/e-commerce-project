@@ -8,7 +8,7 @@ import CarouselBottom from "../components/homepageComponents/CarouselBottom";
 
 function HomePage() {
   return (
-    <div className="mx-auto border border-red-400">
+    <div className="mx-auto">
       <CarouselTop />
       <BestSeller />
       <CarouselBottom />
