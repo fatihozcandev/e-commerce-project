@@ -27,16 +27,10 @@ function BuyMe() {
               We know how large objects will act, but things on a small scale.
             </h4>
             <div className="gap-2.5">
-              <a
-                href="#"
-                className=" bg-primary-color hover:bg-success-color  text-white font-montserrat  rounded mr-2 w-[151px] h-[52px] px-10 py-5 rounded-l-md "
-              >
+              <a href="#" className="btn-blue">
                 BUY NOW
               </a>
-              <a
-                href="#"
-                className=" bg-white-500 hover:bg-light-gray-1 text-success-color font-montserrat outline outline-1   rounded mr-2 w-[151px] h-[52px] px-10 py-5 rounded-l-md "
-              >
+              <a href="#" className=" btn-white">
                 READ ME
               </a>
             </div>

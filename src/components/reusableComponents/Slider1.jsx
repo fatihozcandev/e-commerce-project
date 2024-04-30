@@ -1,7 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-import { bottomSliderData } from "../../data/data";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 import "swiper/css";
@@ -28,7 +27,7 @@ const Slider1 = ({ sliderData }) => {
           <SwiperSlide key={index} className="relative">
             <div className="lg:h-[850px]">
               <img
-                className="lg:w-full h-full object-cover object-top"
+                className="lg:w-full lg:h-full object-cover object-top"
                 src={item.url}
                 alt={`image-${index}`}
               />
@@ -37,14 +36,22 @@ const Slider1 = ({ sliderData }) => {
               <p className="text-h5 font-bold text-light-text-color">
                 {item.season}
               </p>
-              <p className="text-h1 text-light-gray-1">{item.category}</p>
-              <p className="text-h3 text-light-text-color">
+              <p className="text-h1 max-sm:text-h3 text-light-gray-1">
+                {item.category}
+              </p>
+              <p className="text-h3 max-sm:text-h6 max-sm:max-w-48 text-light-text-color">
                 {item.description}
               </p>
               <div>
-                <p>{item.price}</p>
+                {item.price && (
+                  <p className="btn-white bg-light-gray-1 bg-opacity-20">
+                    {item.price}
+                  </p>
+                )}
                 <Link rel="stylesheet" href="">
-                  <button type="button">{item.linkText}</button>
+                  <button className="btn-blue" type="button">
+                    {item.linkText}
+                  </button>
                 </Link>
               </div>
             </div>

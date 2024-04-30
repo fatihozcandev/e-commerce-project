@@ -3,57 +3,80 @@ import { Link } from "react-router-dom";
 
 function NavBarBottom() {
   return (
-    <div className="bg-light-bg-color text-h3 p-4 flex justify-between items-center h-16">
-      <div className="flex items-center">
-        <p className="m-0 mr-6 text-black font-bold bg-white ">Super Outfits</p>
-        <div className="relative">
-          <div className="absolute top-full left-0 w-32 bg-gray-800 py-2 rounded-md shadow-lg hidden"></div>
+    <section className="flex flex-wrap max-md:flex-col justify-around items-center h-auto lg:h-16  bg-light-bg-color ">
+      <h1 className="mr-6 font-bold text-h3 text-text-color">Super Outfits</h1>
+      <nav className="flex flex-wrap items-center ">
+        <section className="relative">
+          <article className="absolute top-full left-0 hidden w-32 py-2 bg-gray-800 rounded-md shadow-lg"></article>
+        </section>
+        <div className="max-sm:flex max-sm:flex-col max-sm:order-last text-second-text-color  ">
+          <Link
+            to="/"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Home
+          </Link>
+          <Link
+            to="/shop"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Shop
+          </Link>
+          <Link
+            to="/About"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            About
+          </Link>
+          <Link
+            to="/Blog"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/Contact"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Contact
+          </Link>
+          <Link
+            to="/Pages"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Pages
+          </Link>
         </div>
-        <a href="/" className="text-link text-h6 hover:underline mr-4">
-          Home
-        </a>
-        <a href="/shop" className="text-link text-h6 hover:underline mr-4">
-          Shop
-        </a>
-        <a href="#" className="text-link text-h6 hover:underline mr-4">
-          About
-        </a>
-        <a href="#" className="text-link text-h6 hover:underline mr-4">
-          Blog
-        </a>
-        <a href="#" className="text-link text-h6 hover:underline mr-4">
-          Contact
-        </a>
-        <a href="#" className="text-link text-h6 hover:underline">
-          Pages
-        </a>
-      </div>
+      </nav>
       <div className="flex items-center">
-        <div className="mr-4 flex flex-row content-center">
-          <a href="#" className=" text-h5 hover:underline">
+        <div className="flex flex-row items-center mr-4">
+          <Link
+            to="/Login"
+            className=" text-primary-color text-h5 hover:underline"
+          >
             Login
-          </a>
-          <span className="text-link text-h6 mx-2">/</span>
-          <a href="#" className="text-h5 hover:underline">
+          </Link>
+          <span className="mx-2 text-h6 text-link text-primary-color ">/</span>
+          <Link
+            to="/Register"
+            className=" text-primary-color text-h5 hover:underline"
+          >
             Register
-          </a>
+          </Link>
         </div>
         <div className="flex items-center">
           <Link to="#">
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </Link>
-
-          <Link to="#">
-            {" "}
-            <i className="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-magnifying-glass  text-primary-color ml-2"></i>
           </Link>
           <Link to="#">
-            {" "}
-            <i className="fa-regular fa-heart"></i>
+            <i className="fa-solid fa-cart-shopping text-primary-color ml-2"></i>
+          </Link>
+          <Link to="#">
+            <i className="fa-regular fa-heart text-primary-color ml-2"></i>
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
