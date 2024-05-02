@@ -1,13 +1,14 @@
 import React from "react";
+import DesktopCloths from "../components/shopPageComponents/DesktopCloths";
+import FilterSide from "../components/shopPageComponents/FilterSide";
+import CategoryList from "../components/shopPageComponents/CategoryList";
 
 function Shop() {
   return (
     <div>
-      <h1>Başlı</h1>
-      <p>alt başlıklar</p>
-      <p>alt başlıklar</p>
-      <p>alt başlıklar</p>
-      <p>alt başlıklar</p>
+      <DesktopCloths />
+      <FilterSide />
+      <CategoryList />
     </div>
   );
 }
