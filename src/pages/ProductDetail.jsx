@@ -12,10 +12,10 @@ import "swiper/css/autoplay";
 
 function ProductDetail() {
   return (
-    <section className="max-w-[1050px]  mx-auto">
+    <section className=" max-w-[1050px]  mx-auto">
       <div>
-        <div className="container  flex gap-8 ">
-          <div className="w-1/2">
+        <div className="  flex gap-8 max-[1050px]:flex-col">
+          <div className=" lg:w-1/2 ">
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, Autoplay]}
               spaceBetween={50}
@@ -40,8 +40,8 @@ function ProductDetail() {
               ))}
             </Swiper>
           </div>
-          <div className=" p-4 rounded-lg">
-            <div className=" items-center">
+          <div className=" container p-4 rounded-lg w-full max-lg:w-1/2">
+            <div className=" items-center ">
               <h2 className="text-h4 font-normal text-text-color mb-3  ">
                 Floating Phone
               </h2>
@@ -51,7 +51,7 @@ function ProductDetail() {
                 <span className="fa fa-star text-yellow-400"></span>
                 <span className="fa fa-star text-yellow-400"></span>
                 <span className="fa fa-star text-gray-300"></span>
-                <span className="text-p text-second-text-color ml-2">
+                <span className="text-paragraph text-second-text-color ml-2">
                   (10 Reviews)
                 </span>
               </div>
@@ -74,7 +74,7 @@ function ProductDetail() {
               venial consequent sent nostrum met.
             </p>
             <hr className="mb-7" />
-            <div className="flex items-center space-x-2 mb-16">
+            <div className="flex items-center mb-16">
               <span className="inline-block text-[90px] leading-4 font-bold text-primary-color ">
                 •
               </span>
@@ -106,70 +106,74 @@ function ProductDetail() {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <div></div>
-          <div className="flex justify-center my-8">
-            <div className="text-second-text-color text-montserrat font-bold  p-4 flex justify-between items-center">
-              <div className="flex items-center"></div>
-              <a
-                href="#"
-                className=" text-link px-3 text-p hover:underline mr-4"
-              >
-                Description
-              </a>
+      <div className="">
+        <div className="flex justify-center my-8">
+          <div className="text-second-text-color text-montserrat font-bold  p-4 flex justify-between items-center">
+            <div className="flex items-center"></div>
+            <a href="#" className=" text-link px-3 text-p hover:underline mr-4">
+              Description
+            </a>
 
-              <a
-                href="#"
-                className=" text-link px-3 text-p hover:underline mr-4"
-              >
-                Additional Information
-              </a>
-              <a
-                href="#"
-                className=" text-link px-3 text-p hover:underline mr-4"
-              >
-                Reviews(0)
-              </a>
-            </div>
+            <a href="#" className=" text-link px-3 text-p hover:underline mr-4">
+              Additional Information
+            </a>
+            <a href="#" className=" text-link px-3 text-p hover:underline mr-4">
+              Reviews(0)
+            </a>
           </div>
         </div>
-        <div className="mb-12">
-          <div className="flex">
-            <div className="flex-1 bg-gray-200 p-4 shadow-md rounded-lg">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/8b0c/0f76/c949a2cffacf01d40c82241e905719cb?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m7XAXOK9g2vUydCr7IOmuFysGjBFt-zjLPhuLSGBvmdjvsSUCLZ8wmZi3Wz5XAPl4EKYWgu19qoIHUamGWeN7DzHoh~shfDil6QO5f9JDbVn-Sxri2vzlL8u4m26SXG1C0WhJt0gUoyIZbcb8WAKJOhexQJ9llLLhpxetu1sPAcdwVmFnjlAWATtv5oknRs7QH3IPqFUsVDyIgyEF3ScjUQlrSrsrP~8XLWTDFKM5M5QWNIsxD2BnPEOjxkvnvsLtQ4DRiq9EkTaYet33ORtzV7bWQtvLwGxLu8oMf3PRu9Cj--avoAPoOVbl4y5tY8njTY1UMcJBVKG5Lr454ogaw__"
-                alt="Resim"
-                className="w-full h-auto object-cover"
-              />
+        <div className="flex mb-12 max-[1050px]:flex max-[1050px]:flex-col flex-wrap ">
+          <div className="flex flex-1 bg-gray-200 p-4 shadow-md rounded-lg">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/8b0c/0f76/c949a2cffacf01d40c82241e905719cb?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m7XAXOK9g2vUydCr7IOmuFysGjBFt-zjLPhuLSGBvmdjvsSUCLZ8wmZi3Wz5XAPl4EKYWgu19qoIHUamGWeN7DzHoh~shfDil6QO5f9JDbVn-Sxri2vzlL8u4m26SXG1C0WhJt0gUoyIZbcb8WAKJOhexQJ9llLLhpxetu1sPAcdwVmFnjlAWATtv5oknRs7QH3IPqFUsVDyIgyEF3ScjUQlrSrsrP~8XLWTDFKM5M5QWNIsxD2BnPEOjxkvnvsLtQ4DRiq9EkTaYet33ORtzV7bWQtvLwGxLu8oMf3PRu9Cj--avoAPoOVbl4y5tY8njTY1UMcJBVKG5Lr454ogaw__"
+              alt="Resim"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="flex-1 bg-white p-4 ">
+            <h3 className="text-h3 text-montserrat font-bold mb-6 text-text-color ">
+              the quick fox jumps over{" "}
+            </h3>
+
+            <p className="mb-5 text-second-text-color text-montserrat text-paragraph ">
+              Met minim Mollie non desert Alamo est sit cliquey dolor do met
+              sent. RELIT official consequent door ENIM RELIT Mollie. Excitation
+              venial consequent sent nostrum met.
+            </p>
+            <p className="mb-5 text-second-text-color text-montserrat text-paragraph">
+              Met minim Mollie non desert Alamo est sit cliquey dolor do met
+              sent. RELIT official consequent door ENIM RELIT Mollie. Excitation
+              venial consequent sent nostrum met.
+            </p>
+            <p className="mb-5 text-second-text-color text-montserrat text-paragraph">
+              Met minim Mollie non desert Alamo est sit cliquey dolor do met
+              sent. RELIT official consequent door ENIM RELIT Mollie. Excitation
+              venial consequent sent nostrum met.
+            </p>
+          </div>
+          <div className="flex-1 bg-white p-4">
+            <h3 className="text-h3 text-montserrat font-bold mb-7 text-text-color">
+              the quick fox jumps over{" "}
+            </h3>
+            <div className="ml-4">
+              <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
+                &gt; the quick fox jumps over the lazy dog
+              </p>
+              <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
+                &gt; the quick fox jumps over the lazy dog
+              </p>
+              <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
+                &gt; the quick fox jumps over the lazy dog
+              </p>
+              <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
+                &gt; the quick fox jumps over the lazy dog
+              </p>
             </div>
-
-            <div className="flex-1 bg-white p-4 ">
-              <h3 className="text-h3 text-montserrat font-bold mb-6 text-text-color ">
-                the quick fox jumps over{" "}
-              </h3>
-
-              <p className="mb-5 text-second-text-color text-montserrat text-paragraph ">
-                Met minim Mollie non desert Alamo est sit cliquey dolor do met
-                sent. RELIT official consequent door ENIM RELIT Mollie.
-                Excitation venial consequent sent nostrum met.
-              </p>
-              <p className="mb-5 text-second-text-color text-montserrat text-paragraph">
-                Met minim Mollie non desert Alamo est sit cliquey dolor do met
-                sent. RELIT official consequent door ENIM RELIT Mollie.
-                Excitation venial consequent sent nostrum met.
-              </p>
-              <p className="mb-5 text-second-text-color text-montserrat text-paragraph">
-                Met minim Mollie non desert Alamo est sit cliquey dolor do met
-                sent. RELIT official consequent door ENIM RELIT Mollie.
-                Excitation venial consequent sent nostrum met.
-              </p>
-            </div>
-
-            <div className="flex-1 bg-white p-4">
-              <h3 className="text-h3 text-montserrat font-bold mb-7 text-text-color">
-                the quick fox jumps over{" "}
-              </h3>
+            <div className="mt-4">
+              <h2 className="text-h3 text-montserrat font-bold mb-7 text-text-color">
+                the quick fox jumps over
+              </h2>
               <div className="ml-4">
                 <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
                   &gt; the quick fox jumps over the lazy dog
@@ -180,25 +184,6 @@ function ProductDetail() {
                 <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
                   &gt; the quick fox jumps over the lazy dog
                 </p>
-                <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
-                  &gt; the quick fox jumps over the lazy dog
-                </p>
-              </div>
-              <div className="mt-4">
-                <h2 className="text-h3 text-montserrat font-bold mb-7 text-text-color">
-                  the quick fox jumps over
-                </h2>
-                <div className="ml-4">
-                  <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
-                    &gt; the quick fox jumps over the lazy dog
-                  </p>
-                  <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
-                    &gt; the quick fox jumps over the lazy dog
-                  </p>
-                  <p className="text-h6 mb-2.5 text-second-text-color text-montserrat font-bold">
-                    &gt; the quick fox jumps over the lazy dog
-                  </p>
-                </div>
               </div>
             </div>
           </div>

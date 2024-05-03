@@ -34,10 +34,10 @@ const Footer = () => {
               key={idx}
               className="flex flex-col basis-1/2 lg:basis-1/4 mb-4"
             >
-              <h2 className="font-bold text-h5 my-4 text-center">
+              <h2 className="font-bold text-h5 my-4 max-sm:text-center">
                 {link.title}
               </h2>
-              <ul className="flex flex-col text-center">
+              <ul className="flex flex-col max-sm:text-center ">
                 <a href="#" className="mb-2 hover:underline">
                   {link.link1}
                 </a>

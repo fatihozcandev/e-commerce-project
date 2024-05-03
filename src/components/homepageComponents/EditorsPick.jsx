@@ -12,25 +12,22 @@ function EditorsPick() {
         </p>
       </div>
 
-      <div className="flex resimalani">
-        <div className="flex-[4_1_100%] px-4 bir numara">
+      <div className="flex resimalani max-w-[1050px] mx-auto">
+        <div className=" flex  w-1/2 bir numara">
           <CategoryCard
             src={CategoryCardData[0].url}
             title={CategoryCardData[0].category}
           />
         </div>
-        <div className="flex flex-col flex-[1_1_100%]  px-4 iki numara">
-          <div
-            className="flex-grow flex-shrink flex-auto overflow-hidden"
-            style={{ aspectRatio: 0.5 }}
-          >
+        <div className="flex  w-1/4  iki numara">
+          <div className="flex ">
             <CategoryCard
               src={CategoryCardData[1].url}
               title={CategoryCardData[1].category}
             />
           </div>
         </div>
-        <div className="flex-[2_1_50%] px-4 uc numara">
+        <div className=" flex-col w-1/4   uc numara">
           <div>
             <CategoryCard
               src={CategoryCardData[2].url}

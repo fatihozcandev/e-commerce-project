@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCard1 from "../reusableComponents/ProductCard1"; // Dosya adı düzeltilmeli
-import { productCardData2 } from "../../data/data"; // Yeni veri seti import edilmeli
+import ProductCard1 from "../reusableComponents/ProductCard1";
+import { productCardData2 } from "../../data/data";
 
 const CategoryList = () => {
   return (
