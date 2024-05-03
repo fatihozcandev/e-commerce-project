@@ -192,7 +192,7 @@ function ProductDetail() {
       </div>
       <div className="container max-w-6xl mx-auto">
         <h2 className="text-h3 mb-10 ml-10 ">BESTSELLER PRODUCTS</h2>
-        <div className="flex flex-wrap justify-center md:justify-center md:mx-auto gap-8  ">
+        <div className="flex flex-wrap justify-center md:justify-center md:mx-auto gap-8 max-w-[1050px]">
           {productCardData.map((card, index) => (
             <ProductCard1
               key={index}

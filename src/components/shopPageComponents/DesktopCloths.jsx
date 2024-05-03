@@ -4,15 +4,15 @@ import ClothsItems from "../reusableComponents/ClothItems";
 
 const DesktopCloths = () => {
   return (
-    <section className="bg-[#FAFAFA] py-8">
-      <div className="max-w-[1200px] mx-auto px-1">
+    <section className="bg-[#FAFAFA] py-8 max-w-[1050px] mx-auto">
+      <div className=" mx-auto px-1">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-2xl font-bold uppercase">SHOP</h1>
           <p className="text-lg">Home / Shop</p>
         </div>
-        <div className="flex flex-row flex-wrap justify-start items-center mx-[-35px]">
+        <div className=" flex flex-wrap mx-auto justify-around">
           {clothsPicturesData.map((item, index) => (
-            <div key={index} className="px-[12px] flex-auto">
+            <div key={index} className="my-5">
               <ClothsItems
                 key={index}
                 imageUrl={item.imageUrl}

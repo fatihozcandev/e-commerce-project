@@ -13,7 +13,7 @@ const BestSeller = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-center md:mx-auto gap-8 max-w-[1124px] ">
+      <div className="flex flex-wrap justify-center  md:mx-auto gap-8 max-w-[1050px] ">
         {productCardData.map((card, index) => (
           <ProductCard1
             key={index}

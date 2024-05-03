@@ -6,6 +6,9 @@
   .btn-blue {
     @apply inline-flex items-center justify-center mx-1 px-4 py-2 sm:px-6 sm:py-3 rounded bg-primary-color text-light-text-color border-0 hover:bg-secondary-text-color-1 focus:outline-none;
   }
+  .btn-blue-md {
+    @apply inline-flex items-center justify-center mx-1 px-4 py-2 sm:px-6 sm:py-3 rounded bg-primary-color text-light-text-color border-0 hover:bg-secondary-text-color-1 focus:outline-none w-[242px] h-[52] font-bold;
+  }
   .btn-white {
     @apply inline-flex items-center justify-center mx-1 px-4 py-2 sm:px-6 sm:py-3 rounded text-secondary-text-color-1 hover:bg-gray-200 focus:outline-dashed;
   }
