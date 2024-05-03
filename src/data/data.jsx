@@ -361,3 +361,35 @@ export const productCardData2 = [
     salePrice: "6.48",
   },
 ];
+export const sponsorlogos = [
+  {
+    id: 1,
+    name: "brand1",
+    imageUrl: "src/assets/brand1.svg",
+  },
+  {
+    id: 2,
+    name: "brand2",
+    imageUrl: "src/assets/brand2.svg",
+  },
+  {
+    id: 3,
+    name: "brand3",
+    imageUrl: "src/assets/brand3.svg",
+  },
+  {
+    id: 4,
+    name: "brand4",
+    imageUrl: "src/assets/brand4.svg",
+  },
+  {
+    id: 5,
+    name: "brand5",
+    imageUrl: "src/assets/brand5.svg",
+  },
+  {
+    id: 6,
+    name: "brand6",
+    imageUrl: "src/assets/brand6.svg",
+  },
+];

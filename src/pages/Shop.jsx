@@ -2,6 +2,7 @@ import React from "react";
 import DesktopCloths from "../components/shopPageComponents/DesktopCloths";
 import FilterSide from "../components/shopPageComponents/FilterSide";
 import CategoryList from "../components/shopPageComponents/CategoryList";
+import Sponsors from "../components/Sponsors";
 
 function Shop() {
   return (
@@ -9,6 +10,7 @@ function Shop() {
       <DesktopCloths />
       <FilterSide />
       <CategoryList />
+      <Sponsors />
     </div>
   );
 }

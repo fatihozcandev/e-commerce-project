@@ -3,6 +3,7 @@ import { productCardData } from "../data/data";
 import ProductCard1 from "../components/reusableComponents/ProductCard1";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import Sponsors from "../components/Sponsors";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -203,6 +204,9 @@ function ProductDetail() {
             />
           ))}
         </div>
+      </div>
+      <div>
+        <Sponsors />
       </div>
     </section>
   );
