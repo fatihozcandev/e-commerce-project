@@ -1,6 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  Autoplay,
+  FreeMode,
+  Thumbs,
+} from "swiper/modules";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 import "swiper/css";

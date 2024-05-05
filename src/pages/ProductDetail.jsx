@@ -1,9 +1,8 @@
 import React from "react";
-import { productCardData } from "../data/data";
+import { bottomSliderData, productCardData } from "../data/data";
 import ProductCard1 from "../components/reusableComponents/ProductCard1";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import Sponsors from "../components/Sponsors";
+import Slider2 from "../components/reusableComponents/Slider2";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,29 +16,7 @@ function ProductDetail() {
       <div>
         <div className="  flex gap-8 max-[1050px]:flex-col">
           <div className=" lg:w-1/2 ">
-            <Swiper
-              modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation
-              autoplay={{
-                delay: 2000,
-              }}
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
-            >
-              {productCardData.map((item, index) => (
-                <SwiperSlide key={index} className="relative">
-                  <div className="lg:h-[500px]">
-                    <img
-                      className="lg:w-full lg:h-full object-cover object-top"
-                      src={item.imageUrl}
-                      alt={`image-${index}`}
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <Slider2 sliderData={bottomSliderData} />
           </div>
           <div className=" container p-4 rounded-lg w-full max-lg:w-1/2">
             <div className=" items-center ">
