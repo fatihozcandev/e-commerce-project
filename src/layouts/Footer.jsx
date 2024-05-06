@@ -4,8 +4,8 @@ import { footerLinks } from "../data/data";
 
 const Footer = () => {
   return (
-    <footer className="text-text-color body-font">
-      <div className="bg-light-gray-1">
+    <footer className="text-text-color body-font ">
+      <div className="bg-light-gray-1 max-lg:py-8">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-4 lg:py-0 h-28 lg:h-36 lg:max-w-[1060px]">
           <h2 className="text-h3 font-semibold mb-4 lg:mb-0 ">Super Outfits</h2>
           <div className="icons flex justify-center lg:justify-start">

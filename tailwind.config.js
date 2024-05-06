@@ -31,6 +31,8 @@ export default {
         "text-color": "#252B42",
         "light-text-color": "#FFFFFF",
         "second-text-color": "#737373",
+        "circle-pinky": "#FFE9EA",
+        "circle-purple": "#977DF4",
       },
     },
     fontSize: {

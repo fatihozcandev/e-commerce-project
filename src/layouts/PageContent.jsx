@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import Shop from "../pages/Shop";
 import ProductDetail from "../pages/ProductDetail";
 import ContactPage from "../pages/ContactPage";
+import AboutUs from "../pages/AboutUs";
 
 function PageContent() {
   return (
@@ -21,6 +22,9 @@ function PageContent() {
         </Route>
         <Route exact path="/contact">
           <ContactPage />
+        </Route>
+        <Route exact path="/about">
+          <AboutUs />
         </Route>
       </Switch>
     </div>

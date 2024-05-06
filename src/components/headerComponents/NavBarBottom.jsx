@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 function NavBarBottom() {
   return (
     <section className="flex flex-wrap max-md:flex-col justify-around items-center h-auto lg:h-16  bg-light-bg-color sm:h-16 gap-4 max-sm:my-7 mb-8">
-      <h1 className="mr-6 font-bold text-h3 text-text-color">Super Outfits</h1>
+      <Link to="/">
+        <h1 className="mr-6 font-bold text-h3 text-text-color">
+          Super Outfits
+        </h1>
+      </Link>
       <nav className="flex flex-wrap items-center ">
         <section className="relative">
           <article className="absolute top-full left-0 hidden w-32 py-2 bg-gray-800 rounded-md shadow-lg"></article>

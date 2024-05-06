@@ -17,7 +17,7 @@ const ContactPage = () => {
           </p>
         </div>
         <div className="flex justify-center">
-          <button className="btn-white w-[272px] h-[52px] text-paragraph font-semibold">
+          <button className=" btn-white text-primary-color w-[272px] h-[52px] text-paragraph font-semibold">
             CONTACT OUR COMPANY
           </button>
         </div>

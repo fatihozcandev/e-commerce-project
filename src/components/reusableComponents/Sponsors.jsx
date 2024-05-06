@@ -1,12 +1,12 @@
 import React from "react";
-import { sponsorlogos } from "../data/data";
+import { sponsorlogos } from "../../data/data";
 
 function Sponsors() {
   return (
-    <div className="bg-[#FAFAFA]">
-      <div className="flex max-sm:flex-col  justify-between items-center p-4 max-w-[1050px] mx-auto my-8">
+    <div className="">
+      <div className="flex max-lg:flex-col  justify-between items-center p-4 max-w-[1050px] mx-auto my-8">
         {sponsorlogos.map((logo) => (
-          <div key={logo.id} className="w-32 h-32">
+          <div key={logo.id} className="w-32 h-32 mx-5 ">
             <img
               src={logo.imageUrl}
               alt={logo.name}

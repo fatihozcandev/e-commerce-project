@@ -1,7 +1,7 @@
 import React from "react";
 import { bottomSliderData, productCardData } from "../data/data";
 import ProductCard1 from "../components/reusableComponents/ProductCard1";
-import Sponsors from "../components/Sponsors";
+import Sponsors from "../components/reusableComponents/Sponsors";
 import Slider2 from "../components/reusableComponents/Slider2";
 
 import "swiper/css";
