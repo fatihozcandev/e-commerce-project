@@ -18,7 +18,7 @@ function ProductDetail() {
           <div className=" lg:w-1/2 ">
             <Slider2 sliderData={bottomSliderData} />
           </div>
-          <div className=" container p-4 rounded-lg w-full max-lg:w-1/2">
+          <div className=" container p-4 rounded-lg w-full lg:w-1/2">
             <div className=" items-center ">
               <h2 className="text-h4 font-normal text-text-color mb-3  ">
                 Floating Phone

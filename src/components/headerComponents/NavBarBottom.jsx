@@ -27,45 +27,52 @@ function NavBarBottom() {
             Shop
           </Link>
           <Link
-            to="/About"
+            to="/about"
             className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
           >
             About
           </Link>
           <Link
-            to="/Blog"
+            to="/blog"
             className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
           >
             Blog
           </Link>
+
           <Link
-            to="/Contact"
+            to="/team"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Team
+          </Link>
+          <Link
+            to="/pricing"
+            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
+          >
+            Pricing
+          </Link>
+          <Link
+            to="/contact"
             className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
           >
             Contact
-          </Link>
-          <Link
-            to="/Pages"
-            className="mr-4 max-sm:text-h4 text-h6 text-link hover:underline"
-          >
-            Pages
           </Link>
         </div>
       </nav>
       <div className="flex items-center">
         <div className="flex flex-row items-center mr-4">
           <Link
-            to="/Login"
+            to="/login"
             className=" text-primary-color text-h5 hover:underline"
           >
             Login
           </Link>
           <span className="mx-2 text-h6 text-link text-primary-color ">/</span>
           <Link
-            to="/Register"
+            to="/signup"
             className=" text-primary-color text-h5 hover:underline"
           >
-            Register
+            Sign Up
           </Link>
         </div>
         <div className="flex items-center">

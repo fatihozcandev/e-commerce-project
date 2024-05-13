@@ -6,7 +6,7 @@ function NavBarTop() {
       <div className="flex items-center lg:ml-2.5">
         <a
           href="mailto:michelle.rivera@example.com"
-          className="flex items-center text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-white Mail-icon"
+          className="flex items-center text-white hover:text-gray-400"
         >
           <i className="fa-solid fa-envelope fa-1x"></i>
           <span className="ml-2 text-sm lg:ml-2 lg:text-sm">
@@ -15,7 +15,7 @@ function NavBarTop() {
         </a>
         <a
           href="tel:+12255550118"
-          className="flex items-center text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-white Phone-icon ml-2.5 lg:ml-2.5"
+          className="flex items-center text-white hover:text-gray-400 Phone-icon ml-2.5 lg:ml-2.5"
         >
           <i className="fa-solid fa-phone"></i>
           <span className="ml-2 text-sm lg:ml-2 lg:text-sm">
@@ -23,7 +23,7 @@ function NavBarTop() {
           </span>
         </a>
       </div>
-      <div className="flex justify-center hidden lg:block max-lg:hidden">
+      <div className="flex justify-center  lg:block max-lg:hidden">
         <p className="text-white text-sm text-center">
           Follow Us and get a chance to win 80% off
         </p>
@@ -37,7 +37,7 @@ function NavBarTop() {
             <li key={platform} className={`${platform}-icon`}>
               <a
                 href={`https://${platform}.com`}
-                className="mx-0.5 text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-white"
+                className="mx-0.5 text-white hover:text-gray-400"
               >
                 <i className={`fa-brands fa-${platform} fa-lg`}></i>
               </a>

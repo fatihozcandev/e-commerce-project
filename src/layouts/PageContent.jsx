@@ -6,6 +6,8 @@ import Shop from "../pages/Shop";
 import ProductDetail from "../pages/ProductDetail";
 import ContactPage from "../pages/ContactPage";
 import AboutUs from "../pages/AboutUs";
+import Team from "../pages/Team";
+import SignUp from "../pages/SignUp";
 
 function PageContent() {
   return (
@@ -25,6 +27,12 @@ function PageContent() {
         </Route>
         <Route exact path="/about">
           <AboutUs />
+        </Route>
+        <Route exact path="/team">
+          <Team />
+        </Route>
+        <Route exact path="/signup">
+          <SignUp />
         </Route>
       </Switch>
     </div>

@@ -2,13 +2,13 @@ import React from "react";
 
 function BuyMe() {
   return (
-    <section className="container-fluid">
-      <div className="flex flex-wrap items-center">
+    <section className="container-fluid my-10">
+      <div className="flex flex-wrap items-center max-w-[1050px] mx-auto">
         <div className="w-full md:w-1/2 px-4">
           <img
-            src="https://s3-alpha-sig.figma.com/img/5f8c/e73d/1a41b674cbd12f927c7ea9a6ca0ce76c?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LC4F7xBCbAFGOCDQy8vyibpmv0OvjU0VHFVinbHZvlB21en7lcMpiXVkqHEK~0oTe43oNUI4SlQoXm0r7tC1EX6qzv2fED1GPGCjzVtXDyBqh6hD8OlJuINJisEyWxFxdzJnBytCAb4pvGTL53l2luk5JiRuf6F-P6bq5VWdpZk5-r8dbUkhXOiMwqgL~ivdCKyCP~TPDkYNY5pn2X4TpTiK43NOBB-B0Wpy2o~dO7B9iGa-WFFSUJpfVst7lIENK3ui5o-ZfY5jg-XAh~iVXHJmTvJnnKbrXMVrEDbvDGoD5JqQhyy6AXLU-17OlVQxH7jZrjIQOhExbpOzQDeHlg__"
+            src="/asian-couple.svg"
             alt="Görsel"
-            className="w-full h-auto"
+            className="w-full max-h-[700px]  "
           />
         </div>
         <div className="w-full md:w-1/2 px-4">

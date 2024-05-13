@@ -34,7 +34,7 @@ const Slider1 = ({ sliderData }) => {
           <SwiperSlide key={index} className="relative">
             <div className="lg:h-[850px]">
               <img
-                className="lg:w-full lg:h-full object-contain object-top"
+                className="lg:w-full lg:h-full object-cover object-top"
                 src={item.url}
                 alt={`image-${index}`}
               />

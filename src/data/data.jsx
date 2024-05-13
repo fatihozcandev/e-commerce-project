@@ -113,7 +113,7 @@ export const productCardData = [
 export const topSliderData = [
   {
     id: 1,
-    url: "https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fMd0TpvHwm-5FftP7jkJzEmzf59eKBHetVCGhp8PlrCI8twT4fFEpOUYF8fCSJgdrjB8tZvGeKXkVLehXbY9I9XihZL3KxyO3QCuaFVpd7022miy1Ifrhpj275kU4Uxc20twESSse7taKv-EaqvkCL-hFhS-IajdT7FOBfdgMm0orQHulP9NEJ-Pi4LbNj5YqZnXggEkxkFYDfND8iac-JSY~J5-ly6wlu6wf5U3fqt4DHveHDkt3jyB-soG9WSjCvhJRgU4SOx9SCJzptqf8fFuNjdPc2~tRbTmuMjROGT5d6-W88M4U4uIuEY-uNNi78M1YuSbuIz3XFApe3XTIw__",
+    url: "/slider1.svg",
     season: "SUMMER 2020",
     category: "NEW COLLECTION",
     description:
@@ -401,5 +401,62 @@ export const relevantVideos = [
   {
     url: "https://youtu.be/z4ojOvEQZ3k",
     id: "Workintech Tanıtım",
+  },
+];
+
+export const teams = [
+  {
+    imageUrl1:
+      "https://ca.slack-edge.com/T046N0ZLKU4-U04MMHSRDQV-25756959281c-512",
+    username: "Erhan Fırat",
+    profession: "Project Owner",
+  },
+  {
+    imageUrl1:
+      "https://ca.slack-edge.com/T046N0ZLKU4-U04JC18J1GF-e855c5fc6d69-192",
+    username: "Gökhan Özdemir",
+    profession: "Scrum Master",
+  },
+  {
+    imageUrl1:
+      "https://media.licdn.com/dms/image/D4E03AQHco19a5GbUOg/profile-displayphoto-shrink_400_400/0/1715025322501?e=1720656000&v=beta&t=vxZP3TscLlGRAzSDVCr6_elE27iHutPGPZ9jr3mph1g",
+    username: "Fatih Özcan",
+    profession: "Front-End Developer",
+  },
+  {
+    imageUrl1:
+      "https://media.istockphoto.com/id/1184056094/photo/full-body-picture-of-pretty-afro-american-model-in-ethnic-dress-isolated-on-colorful.jpg?s=612x612&w=0&k=20&c=ISpeWv2yGN2Qy7q_GZVDl5XI0DXi1vm9t780bmih1Vo=",
+    username: "Ayşe Yılmaz",
+    profession: "Data Scientist",
+  },
+  {
+    imageUrl1:
+      "https://img.freepik.com/free-photo/romantic-girl-with-wavy-hairstyle-posing-orange-with-smile-indoor-portrait-amazing-white-lady-trendy-sweater_197531-11101.jpg",
+    username: "Derya Demir",
+    profession: "UI/UX Designer",
+  },
+  {
+    imageUrl1:
+      "https://www.shutterstock.com/image-photo/gorgeous-shorthaired-girl-sunglasses-dancing-600nw-750408166.jpg",
+    username: "Elif Korkmaz",
+    profession: "System Administrator",
+  },
+  {
+    imageUrl1:
+      "https://t4.ftcdn.net/jpg/02/72/53/09/360_F_272530952_REgDcKtZDnNwaY9nNeMjXNeD3UPBzByG.jpg",
+    username: "Seda Öztürk",
+    profession: "Backend Developer",
+  },
+  {
+    imageUrl1:
+      "https://img.freepik.com/free-photo/surprised-fair-haired-woman-sunglasses-looking-her-hand_197531-12739.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711929600&semt=ais",
+    username: "Selin Aydın",
+    profession: "Product Manager",
+  },
+  {
+    imageUrl1:
+      "https://t4.ftcdn.net/jpg/04/00/58/99/360_F_400589991_4iTmM7ynoPHWvJ51tOlqTncUz0s8cvcX.jpg",
+    username: "Merve Toprak",
+    profession: "Network Engineer",
   },
 ];
