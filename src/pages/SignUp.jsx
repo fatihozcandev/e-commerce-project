@@ -1,22 +1,23 @@
-import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
+import axios from "axios";
 import { useForm, get } from "react-hook-form";
 import { useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { fetchRoles } from "../store/actions/clientActions";
 
-const api = axios.create({
-  baseURL: "https://workintech-fe-ecommerce.onrender.com",
-});
-
-export default function App() {
-  const [roles, setRoles] = useState([]);
+export default function SignUp() {
   const [storeDetails, setStoreDetails] = useState(false);
   const [confirmPassword, setConfirmPassword] = useState("");
   const [confirmError, setConfirmError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submissionError, setSubmissionError] = useState("");
+
+  const dispatch = useDispatch();
   const history = useHistory();
+  const roles = useSelector((state) => state.client.roles.roles);
+  const loading = useSelector((state) => state.client.roles.loading);
+  const error = useSelector((state) => state.client.roles.error);
 
   const {
     register,
@@ -39,17 +40,21 @@ export default function App() {
     },
   });
 
-  const storeNameError = get(errors, "store.name");
-  const storePhoneError = get(errors, "store.phone");
-  const storeTaxError = get(errors, "store.tax_no");
-  const storeIbanError = get(errors, "store.bank_account");
+  const api = axios.create({
+    baseURL: "https://workintech-fe-ecommerce.onrender.com",
+  });
 
   useEffect(() => {
-    api
-      .get("/roles")
-      .then((response) => setRoles(response.data.reverse()))
-      .catch((error) => console.log(error));
-  }, []);
+    dispatch(fetchRoles());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (loading) {
+      toast.info("Loading...");
+    } else if (error) {
+      toast.error(`Error: ${error}`);
+    }
+  }, [loading, error]);
 
   const selectedRoleId = watch("role_id");
 
@@ -62,23 +67,25 @@ export default function App() {
       setConfirmError("The passwords do not match");
       return;
     }
-    setIsSubmitting(true); // Start spinner
-    setConfirmError(""); // Reset confirm error
+    setIsSubmitting(true);
+    setConfirmError("");
 
     try {
-      const response = await api.post("/signup", register);
+      await api.post("/signup", data);
       toast.success("Check your email to activate your account!");
-      setTimeout(() => {}, 5000);
       reset();
       history.push("/");
     } catch (error) {
-      toast.error(
-        error.response?.data?.message ||
-          "The email adress is already registered."
-      );
+      toast.error("The email address is already registered.");
     }
     setIsSubmitting(false);
   };
+
+  // Error handling
+  const storeNameError = get(errors, "store.name");
+  const storePhoneError = get(errors, "store.phone");
+  const storeTaxError = get(errors, "store.tax_no");
+  const storeIbanError = get(errors, "store.bank_account");
 
   return (
     <form
